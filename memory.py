@@ -1,3 +1,5 @@
+import psutil
+
 # Memory Information
 print("="*40, "Memory Information", "="*40)
 # get the memory details
