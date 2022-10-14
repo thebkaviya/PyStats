@@ -1,5 +1,14 @@
 import psutil
 
+def get_size(bytes):
+    """
+    Returns size of bytes in a nice format
+    """
+    for unit in ['', 'K', 'M', 'G', 'T', 'P']:
+        if bytes < 1024:
+            return f"{bytes:.2f}{unit}B"
+        bytes /= 1024
+
 # Memory Information
 print("="*40, "Memory Information", "="*40)
 # get the memory details
