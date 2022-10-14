@@ -16,7 +16,7 @@ print("Partitions and Usage:")
 # get all disk partitions
 partitions = psutil.disk_partitions()
 for partition in partitions:
-    print(f"=== Device: {partition.device} ===")
+    print(f"===== Device: {partition.device} =====")
     print(f"  Mountpoint: {partition.mountpoint}")
     print(f"  File system type: {partition.fstype}")
     try:
